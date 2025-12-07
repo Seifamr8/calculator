@@ -3,7 +3,7 @@ name: Java CI with Maven
 on:
   push:
     branches: 
-      - main   # أو الفرع اللي بتشتغل عليه، ممكن تغيره زي ما تحب
+      - main 
   pull_request:
     branches:
       - main
@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         distribution: 'temurin'
-        java-version: '17'  # أو 1.7 لو أنت بتستخدم جافا 7 لكن يفضل تحديثها
+        java-version: '17'  
 
     - name: Build with Maven and run tests
       run: mvn clean test
